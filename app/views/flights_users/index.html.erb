@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Flights Users</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Flight</th>
+      <th>Seat number</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @flights_users.each do |flights_user| %>
+      <tr>
+        <td><%= flights_user.user_id %></td>
+        <td><%= flights_user.flight_id %></td>
+        <td><%= flights_user.seat_number %></td>
+        <td><%= link_to 'Show', flights_user %></td>
+        <td><%= link_to 'Edit', edit_flights_user_path(flights_user) %></td>
+        <td><%= link_to 'Destroy', flights_user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Flights User', new_flights_user_path %>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Seat:</strong>
+  <%= @flights_seat.seat_id %>
+</p>
+
+<p>
+  <strong>Flight:</strong>
+  <%= @flights_seat.flight_id %>
+</p>
+
+<%= link_to 'Edit', edit_flights_seat_path(@flights_seat) %> |
+<%= link_to 'Back', flights_seats_path %>

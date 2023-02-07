@@ -1,0 +1,2 @@
+class FlightsSeat < ApplicationRecord
+end
