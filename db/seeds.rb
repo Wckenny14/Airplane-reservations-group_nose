@@ -49,3 +49,4 @@ puts "Flights and airplanes"
 a1.flights << f1
 a2.flights << f2
 a3.flights << f3
+a4.flights << f4
